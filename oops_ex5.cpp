@@ -11,7 +11,7 @@ class book
    {
      return price*n;
    }
-
+   
    public:
    void input()
    {
