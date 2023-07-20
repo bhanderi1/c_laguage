@@ -10,7 +10,6 @@ class takedata
     {
         return eng+maths+sci;
     }
-   
     public:
     takedata()
     { 
@@ -31,7 +30,6 @@ class takedata
     {
         cout<<"admno"<<"\t"<<"name"<<"\t"<<"eng"<<"\t"<<"maths"<<"\t"<<"sci"<<"\t"<<"total"<<endl;
         cout<<admno<<"\t"<<name<<"\t"<<eng<<"\t"<<maths<<"\t"<<sci<<"\t"<<total<<endl;
-
     }
 };
 
