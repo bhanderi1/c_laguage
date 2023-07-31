@@ -4,6 +4,7 @@
 using namespace std;
 int main()
 {
+
     cout<<"ans is:"<<ceil(2.8)<<endl;
     cout<<"ans is:"<<ceil(-5.4)<<endl;
 
@@ -22,5 +23,6 @@ int main()
     cout<<"ans is:"<<pow(2,5)<<endl;
 
     cout<<"ans is:"<<rand()%20<<endl;
+    
 }
 
