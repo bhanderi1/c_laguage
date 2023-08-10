@@ -4,29 +4,31 @@ class bank
 {
     public:
     int acno;
-    float deposit ,withdrow,display,abalance;
-    float balnace=11000.10;
+    float deposit ,withdrow,display;
+    float balnace=1000.10;
     string name;
 
     void account()
     {
 
         cout<<"please ! press key....\n\n";
-        cout<<"enter your account number:";
+        cout<<"enter your account number :";
         cin>>acno;
-
+        
         cout<<"enter account holder name :";
         cin>>name;
         cout<<"-----------------------------------------------------";
     }
 
+    
     void deposit_am()
     {
         cout<<"\t enter amount deposit:";
         cin>>deposit;
-
-        abalance =balnace+deposit;
-        cout<<"\n\t avalebale balance in your account :"<<abalance<<endl;
+        {
+        balnace += deposit;
+        cout<<"\n\t avalibale balance in your account :"<<balnace<<endl;
+        }
 
         cout<<"\n-----------------------------------------------------";
     }
@@ -39,8 +41,8 @@ class bank
 
         if(balnace>=withdrow)
         {
-           abalance -=withdrow;
-           cout<<"\n\t avalebale balance in your account :"<<abalance<<endl;
+           balnace -= withdrow;
+           cout<<"\n\t avalibale balance in your account :"<<balnace<<endl;
         }
         else
         {
@@ -52,7 +54,7 @@ class bank
 
      void display_am()
      {
-        cout<<"\n\t your account balance :"<<abalance<<endl;
+        cout<<"\n\t your account balance :"<<balnace<<endl;
         cout<<"\n-----------------------------------------------------";
      }
 };
@@ -90,7 +92,8 @@ int main()
           break;
 
       default:
-        cout<<"your number is wrong choice.........";
+        cout<<"\nyour number is wrong choice.........";
+        cout<<"\n-----------------------------------------------------";
         break;
       }
 
